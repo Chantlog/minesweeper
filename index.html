@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,24 @@
   <script src="script.js" type='module'></script>
   <title>Minesweeper</title>
 </head>
+
 <body>
   <h3 class="title">Minesweeper</h3>
+  <div>
+    <label>
+      Number of cells per row/column:
+      <input type="text" value=10 maxlength=2 id='numCells'></input>
+    </label>
+    <label>
+      Number of mines:
+      <input type="text" value=10 maxlength=2 id='numMines'></input>
+    </label>
+  </div>
+  <input class="button" type="button" value='Start New Game' id='startGameButton'>
   <div class="subtext">
     Mines Left: <span data-mine-count></span>
   </div>
   <div class="board"></div>
 </body>
+
 </html>
